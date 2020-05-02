@@ -1,0 +1,20 @@
+.register-page .card {
+	max-width: 350px!important;
+	padding: 40px;
+	background-color: #f7f7f7;
+	margin: 50px auto 25px;
+}
+
+.register-page .header-container {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.register-page .header-container i {
+	font-size: 80px;
+}
+
+.register-page .card-link {
+	text-align: center;
+	margin-top: 10px;
+}
