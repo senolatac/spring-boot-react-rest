@@ -3,6 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 const API_URL = 'http://localhost:8080/api/user/';
 
+//initial value
 const currentUserSubject = new BehaviorSubject(JSON.parse(localStorage.getItem('currentUser')));
 
 class UserService {
@@ -26,6 +27,7 @@ class UserService {
                 response.data.password = user.password; // Store pure password.
                 localStorage.setItem('currentUser', JSON.stringify(response.data));
                 currentUserSubject.next(response.data);
+                return response.data;
             })
     }
 
